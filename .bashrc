@@ -108,3 +108,8 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+if [ -n "$DISPLAY" ]; then
+  xset b off
+fi
+
