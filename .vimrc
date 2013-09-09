@@ -6,7 +6,7 @@ set number
 set nowrap
 
 set autoindent
-set cindent
+" set cindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
