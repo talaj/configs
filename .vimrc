@@ -31,3 +31,6 @@ endfun
 
 autocmd FileType c,cpp,java,php,ruby,python autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
 
+highlight Pmenu ctermfg=black ctermbg=white
+highlight PmenuSel ctermfg=white ctermbg=darkblue
+
