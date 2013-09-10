@@ -5,6 +5,8 @@ syntax enable
 set number
 set nowrap
 
+set bg=dark
+
 set autoindent
 " set cindent
 set tabstop=4
