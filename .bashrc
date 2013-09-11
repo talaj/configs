@@ -86,10 +86,11 @@ if [ -x /usr/bin/dircolors ]; then
     #alias egrep='egrep --color=auto'
 fi
 
-# some more ls aliases
+# some more aliases
 #alias ll='ls -l'
 #alias la='ls -A'
 alias l='ls -ahl'
+alias df='df -h'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -110,6 +111,10 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+export EDITOR=/usr/bin/vim
+
+#. /etc/bash_completion
 
 if [ -n "$DISPLAY" ]; then
   xset b off
