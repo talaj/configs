@@ -4,6 +4,7 @@ set nocompatible
 syntax enable
 set number
 set nowrap
+set hls
 
 set bg=dark
 
