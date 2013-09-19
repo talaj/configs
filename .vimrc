@@ -30,6 +30,9 @@ set omnifunc=syntaxcomplete#Complete
 set completeopt=menuone,longest
 "set completeopt=menuone,longest,preview
 
+"inoremap <C-Space> <C-x><C-o>
+"inoremap <C-@> <C-Space>
+
 " Highlight characters over 80 on one line.
 autocmd BufRead,BufNewFile *.cc,*.h,*.sql,*.py,*.cpp,*.sh,*.conf,*.help syntax match Error "\(^.\{80\}.*\)\@<=."
 " Highlight trailing whitespaces.
