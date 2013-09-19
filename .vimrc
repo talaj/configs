@@ -1,7 +1,11 @@
 
 set nocompatible
 
-syntax enable
+" pathogen
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+
 set number
 set nowrap
 set hls
@@ -9,7 +13,6 @@ set hls
 set bg=dark
 
 set autoindent
-" set cindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -35,3 +38,6 @@ autocmd FileType c,cpp,java,php,ruby,python autocmd BufWritePre <buffer> :call <
 highlight Pmenu ctermfg=black ctermbg=white
 highlight PmenuSel ctermfg=white ctermbg=darkblue
 
+" Code folding
+set foldmethod=indent
+set foldlevel=99
