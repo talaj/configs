@@ -46,6 +46,17 @@ set foldlevel=99
 " TaskList plugin.
 map <leader>td <Plug>TaskList
 
-" Gundo plugin
+" Gundo plugin.
 map <leader>g :GundoToggle<CR>
+
+" Pep8 plugin.
+let g:pep8_map='<leader>8'
+
+" SuperTab plugin.
+au FileType python set omnifunc=pythoncomplete#Complete
+let g:SuperTabDefaultCompletionType = "context"
+set completeopt=menuone,longest,preview
+
+" NerdTree plugin.
+map <leader>n :NERDTreeToggle<CR>
 
