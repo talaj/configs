@@ -5,6 +5,7 @@ set nocompatible
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
+filetype on
 
 set number
 set nowrap
@@ -38,6 +39,13 @@ autocmd FileType c,cpp,java,php,ruby,python autocmd BufWritePre <buffer> :call <
 highlight Pmenu ctermfg=black ctermbg=white
 highlight PmenuSel ctermfg=white ctermbg=darkblue
 
-" Code folding
+" Code folding plugin.
 set foldmethod=indent
 set foldlevel=99
+
+" TaskList plugin.
+map <leader>td <Plug>TaskList
+
+" Gundo plugin
+map <leader>g :GundoToggle<CR>
+
