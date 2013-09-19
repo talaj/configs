@@ -2,7 +2,10 @@
 set nocompatible
 
 " pathogen
+let g:pathogen_disabled = []
+call add(g:pathogen_disabled, 'supertab')
 execute pathogen#infect()
+
 syntax on
 filetype plugin indent on
 filetype on
@@ -21,6 +24,11 @@ set expandtab
 if has('mouse')
     set mouse=a
 endif
+
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
+set completeopt=menuone,longest
+"set completeopt=menuone,longest,preview
 
 " Highlight characters over 80 on one line.
 autocmd BufRead,BufNewFile *.cc,*.h,*.sql,*.py,*.cpp,*.sh,*.conf,*.help syntax match Error "\(^.\{80\}.*\)\@<=."
@@ -53,9 +61,8 @@ map <leader>g :GundoToggle<CR>
 let g:pep8_map='<leader>8'
 
 " SuperTab plugin.
-au FileType python set omnifunc=pythoncomplete#Complete
-let g:SuperTabDefaultCompletionType = "context"
-set completeopt=menuone,longest,preview
+"au FileType python set omnifunc=pythoncomplete#Complete
+"let g:SuperTabDefaultCompletionType = "context"
 
 " NerdTree plugin.
 map <leader>n :NERDTreeToggle<CR>
