@@ -4,6 +4,7 @@ set nocompatible
 " pathogen
 let g:pathogen_disabled = []
 call add(g:pathogen_disabled, 'supertab')
+call add(g:pathogen_disabled, 'minibufexpl')
 execute pathogen#infect()
 
 syntax on
@@ -27,7 +28,7 @@ endif
 
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
-set completeopt=menuone,longest
+"set completeopt=longest
 "set completeopt=menuone,longest,preview
 
 "inoremap <C-Space> <C-x><C-o>
