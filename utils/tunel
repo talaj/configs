@@ -1,0 +1,7 @@
+ #!/bin/sh
+
+while :
+do
+    ssh talaj@xena.dev -R 666:localhost:22
+done
+
