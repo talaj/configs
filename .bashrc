@@ -121,3 +121,6 @@ if [ -n "$DISPLAY" ]; then
   xset b off
 fi
 
+# No more wuff in screen.
+alias screen='TERM=screen screen'
+
