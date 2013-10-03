@@ -5,6 +5,7 @@ set nocompatible
 let g:pathogen_disabled = []
 call add(g:pathogen_disabled, 'supertab')
 call add(g:pathogen_disabled, 'minibufexpl')
+call add(g:pathogen_disabled, 'ropevim')
 execute pathogen#infect()
 
 syntax on
