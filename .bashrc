@@ -115,6 +115,7 @@ fi
 
 export EDITOR=/usr/bin/vim
 export LANG=en_US.UTF-8
+export PATH=~/local/bin:$PATH
 
 #. /etc/bash_completion
 
