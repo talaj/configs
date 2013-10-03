@@ -114,6 +114,7 @@ if ! shopt -oq posix; then
 fi
 
 export EDITOR=/usr/bin/vim
+export LANG=en_US.UTF-8
 
 #. /etc/bash_completion
 
