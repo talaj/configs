@@ -52,3 +52,6 @@
 [submodule ".vim/bundle/mw"]
 	path = .vim/bundle/mw
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule ".vim/bundle/syntastic"]
+	path = .vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
