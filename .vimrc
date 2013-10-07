@@ -6,6 +6,7 @@ let g:pathogen_disabled = []
 call add(g:pathogen_disabled, 'supertab')
 call add(g:pathogen_disabled, 'minibufexpl')
 call add(g:pathogen_disabled, 'ropevim')
+call add(g:pathogen_disabled, 'vim-airline')
 execute pathogen#infect()
 
 syntax on
@@ -72,4 +73,5 @@ let g:pep8_map='<leader>8'
 " NerdTree plugin.
 map <leader>n :NERDTreeToggle<CR>
 
-
+set laststatus=2
+set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
