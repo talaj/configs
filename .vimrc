@@ -1,5 +1,16 @@
 
-set nocompatible
+
+" CTRL-Tab is Next window
+noremap <C-Tab> <C-W>w
+inoremap <C-Tab> <C-O><C-W>w
+cnoremap <C-Tab> <C-C><C-W>w
+onoremap <C-Tab> <C-C><C-W>w
+
+" CTRL-Shift-Tab is Previous window
+noremap <S-C-Tab> <C-W>p
+inoremap <S-C-Tab> <C-O><C-W>p
+cnoremap <S-C-Tab> <C-C><C-W>p
+onoremap <S-C-Tab> <C-C><C-W>p
 
 " pathogen
 let g:pathogen_disabled = []
@@ -23,6 +34,8 @@ set autoindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set smarttab
+set backspace=indent,eol,start
 
 if has('mouse')
     set mouse=a
