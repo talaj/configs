@@ -126,3 +126,6 @@ fi
 # No more wuff in screen.
 alias screen='TERM=screen screen'
 
+# Nice git log output
+alias gl='git log --oneline --graph --color --all --decorate'
+
