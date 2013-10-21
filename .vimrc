@@ -88,3 +88,6 @@ map <leader>n :NERDTreeToggle<CR>
 
 set laststatus=2
 set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
+
+" Extended mouse handling in terminal.
+set ttym=sgr
