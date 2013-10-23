@@ -61,7 +61,7 @@ fun! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfun
 
-autocmd FileType c,cpp,java,php,ruby,python autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+autocmd FileType c,cpp,java,php,ruby,python,js autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
 
 highlight Pmenu ctermfg=black ctermbg=white
 highlight PmenuSel ctermfg=white ctermbg=darkblue
@@ -91,3 +91,4 @@ set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
 
 " Extended mouse handling in terminal.
 set ttym=sgr
+
