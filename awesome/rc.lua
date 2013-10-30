@@ -74,7 +74,7 @@ layouts =
 tags = {}
 for s = 1, screen.count() do
     -- Each screen has its own tag table.
-    tags[s] = awful.tag({ 1, 2, 3, 4, 5, 6, 7, 8, 9 }, s, layouts[1])
+    tags[s] = awful.tag({ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 }, s, layouts[3])
 end
 -- }}}
 
@@ -118,7 +118,7 @@ kbdcfg.switch = function ()
    kbdcfg.widget.text = t
    os.execute( kbdcfg.cmd .. t )
 end
-    
+
 -- Mouse bindings
 kbdcfg.widget:buttons(awful.util.table.join(
     awful.button({ }, 1, function () kbdcfg.switch() end)
