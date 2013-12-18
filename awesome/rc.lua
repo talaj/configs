@@ -40,7 +40,7 @@ end
 beautiful.init("/home/jiri/.config/awesome/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "x-terminal-emulator"
+terminal = "urxvt -bg black -fg white +sb"
 editor = os.getenv("EDITOR") or "editor"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -401,4 +401,3 @@ client.add_signal("unfocus", function(c) c.border_color = beautiful.border_norma
 -- }}}
 
 -- run_once("xterm",nil,nil,1)
-
