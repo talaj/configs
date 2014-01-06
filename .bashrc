@@ -8,7 +8,8 @@ case $- in
       *) return;;
 esac
 
-TERM=xterm-color
+#TERM=xterm-color
+TERM=rxvt-color
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -41,7 +42,7 @@ fi
 
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
-    xterm-color) color_prompt=yes;;
+    *-color) color_prompt=yes;;
 esac
 
 # uncomment for a colored prompt, if the terminal has the capability; turned
