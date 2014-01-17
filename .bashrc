@@ -137,3 +137,5 @@ alias gcal='gcal -s 1 -q CZ -b 4'
 
 alias ai='apt-get install'
 alias ase='aptitude search'
+
+alias emacs='emacs -nw'
