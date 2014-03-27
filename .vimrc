@@ -36,6 +36,7 @@ set shiftwidth=4
 set expandtab
 set smarttab
 set backspace=indent,eol,start
+set nocursorline
 
 if has('mouse')
     set mouse=a
@@ -61,10 +62,12 @@ fun! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfun
 
-autocmd FileType c,cpp,java,php,ruby,python,javascript autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+autocmd FileType c,cpp,java,php,ruby,python,javascript,sql autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
 
 highlight Pmenu ctermfg=black ctermbg=white
 highlight PmenuSel ctermfg=white ctermbg=darkblue
+
+hi Visual term=reverse cterm=reverse guibg=Grey
 
 " Code folding plugin.
 set foldmethod=indent
@@ -90,5 +93,5 @@ set laststatus=2
 set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
 
 " Extended mouse handling in terminal.
-set ttym=sgr
+"set ttym=urxvt
 
