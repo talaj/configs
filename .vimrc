@@ -1,25 +1,5 @@
 
 
-" CTRL-Tab is Next window
-noremap <C-Tab> <C-W>w
-inoremap <C-Tab> <C-O><C-W>w
-cnoremap <C-Tab> <C-C><C-W>w
-onoremap <C-Tab> <C-C><C-W>w
-
-" CTRL-Shift-Tab is Previous window
-noremap <S-C-Tab> <C-W>p
-inoremap <S-C-Tab> <C-O><C-W>p
-cnoremap <S-C-Tab> <C-C><C-W>p
-onoremap <S-C-Tab> <C-C><C-W>p
-
-" pathogen
-let g:pathogen_disabled = []
-call add(g:pathogen_disabled, 'supertab')
-call add(g:pathogen_disabled, 'minibufexpl')
-call add(g:pathogen_disabled, 'ropevim')
-call add(g:pathogen_disabled, 'vim-airline')
-execute pathogen#infect()
-
 syntax on
 filetype plugin indent on
 filetype on
@@ -73,25 +53,13 @@ hi Visual term=reverse cterm=reverse guibg=Grey
 set foldmethod=indent
 set foldlevel=99
 
-" TaskList plugin.
-map <leader>td <Plug>TaskList
-
-" Gundo plugin.
-map <leader>g :GundoToggle<CR>
-
-" Pep8 plugin.
-let g:pep8_map='<leader>8'
-
-" SuperTab plugin.
-"au FileType python set omnifunc=pythoncomplete#Complete
-"let g:SuperTabDefaultCompletionType = "context"
-
-" NerdTree plugin.
-map <leader>n :NERDTreeToggle<CR>
-
 set laststatus=2
 set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
 
 " Extended mouse handling in terminal.
 "set ttym=urxvt
+
+set timeoutlen=1000 ttimeoutlen=0
+
+
 
