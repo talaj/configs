@@ -1,7 +1,9 @@
 xterm*font:     *-fixed-*-*-*-17-*
 
-urxvt*foreground: white
-urxvt*background: black
+URxvt.foreground: white
+URxvt.background: black
+
+URxvt.scrollBar: false
 
 !URxvt.color0: #3f3f3f
 !URxvt.color1: #c44444
@@ -26,4 +28,3 @@ URxvt.tabbed.tab-fg:    11
 URxvt.tabbed.tab-bg:    0
 
 !URxvt.perl-ext-common:  default,tabbed
-URxvt.scrollBar: false
