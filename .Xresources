@@ -22,6 +22,9 @@ URxvt.color12: #94bfff
 
 !https://github.com/bytensky/knxt
 URxvt.font: -k-knxt-medium-r-normal--20-200-72-72-c-100-iso10646-1
+
+!URxvt.font: -d-default8x16-medium-r-normal--20-200-72-72-c-100-iso10646-1
+
 URxvt.boldFont:
 URxvt.italicFont:
 URxvt.boldItalicFont:
