@@ -1,0 +1,10 @@
+#!/bin/bash
+
+xset +fp ~/.fonts
+xset fp rehash
+xrdb ~/.Xresources
+
+setxkbmap cz qwerty
+
+chromium-browser &
+
