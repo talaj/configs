@@ -139,3 +139,6 @@ alias ai='apt-get install'
 alias ase='aptitude search'
 
 alias emacs='emacs -nw'
+
+export HISTCONTROL=ignorespace:ignoredups
+
