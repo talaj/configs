@@ -61,5 +61,7 @@ set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
 
 set timeoutlen=1000 ttimeoutlen=0
 
+noremap j gj
+noremap k gk
 
 
